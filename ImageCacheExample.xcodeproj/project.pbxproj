@@ -23,6 +23,7 @@
 		DA229B38291778F800413CBD /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA229B37291778F800413CBD /* PhotoTableViewCell.swift */; };
 		DA229B3B29177A8E00413CBD /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA229B3A29177A8E00413CBD /* MainTabBarController.swift */; };
 		DA229B3E29177D1100413CBD /* Instantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA229B3D29177D1100413CBD /* Instantiatable.swift */; };
+		DAAFB2442917A1FD007A8DF0 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAFB2432917A1FD007A8DF0 /* Photo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		DA229B37291778F800413CBD /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
 		DA229B3A29177A8E00413CBD /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		DA229B3D29177D1100413CBD /* Instantiatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instantiatable.swift; sourceTree = "<group>"; };
+		DAAFB2432917A1FD007A8DF0 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,8 +116,9 @@
 			isa = PBXGroup;
 			children = (
 				DA229B222917723500413CBD /* Application */,
-				DA229B242917724100413CBD /* Resources */,
+				DAAFB2422917A1E6007A8DF0 /* Entities */,
 				DA229B232917723D00413CBD /* Presentation */,
+				DA229B242917724100413CBD /* Resources */,
 			);
 			path = ImageCacheExample;
 			sourceTree = "<group>";
@@ -234,6 +237,14 @@
 				DA229B3D29177D1100413CBD /* Instantiatable.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		DAAFB2422917A1E6007A8DF0 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				DAAFB2432917A1FD007A8DF0 /* Photo.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,6 +383,7 @@
 				DA229B38291778F800413CBD /* PhotoTableViewCell.swift in Sources */,
 				DA229B302917776D00413CBD /* WithPullDownMenuViewController.swift in Sources */,
 				DA229B3E29177D1100413CBD /* Instantiatable.swift in Sources */,
+				DAAFB2442917A1FD007A8DF0 /* Photo.swift in Sources */,
 				DA170D93291681A600BFC7B1 /* AppDelegate.swift in Sources */,
 				DA229B3B29177A8E00413CBD /* MainTabBarController.swift in Sources */,
 				DA170D95291681A600BFC7B1 /* SceneDelegate.swift in Sources */,

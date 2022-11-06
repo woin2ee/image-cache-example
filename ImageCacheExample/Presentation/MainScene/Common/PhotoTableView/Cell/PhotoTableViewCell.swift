@@ -7,17 +7,31 @@
 
 import UIKit
 
-class PhotoTableViewCell: UITableViewCell {
-
+final class PhotoTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var thumbnailImageView: UIImageView!
+    @IBOutlet weak var idLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
-
+    
+    func bind(photo: Photo) {
+        thumbnailImageView.image = {
+            if let imageURL = URL(string: photo.thumbnailURL),
+               let imageData = try? Data(contentsOf: imageURL),
+               let image = UIImage(data: imageData) {
+                return image
+            } else {
+                return UIImage()
+            }
+        }()
+        idLabel.text = "\(photo.id)"
+        titleLabel.text = photo.title
+    }
 }

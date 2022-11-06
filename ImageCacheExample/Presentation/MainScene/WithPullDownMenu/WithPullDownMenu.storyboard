@@ -16,8 +16,22 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OnE-Yt-gVc">
+                                <rect key="frame" x="0.0" y="47" width="390" height="714"/>
+                                <connections>
+                                    <segue destination="7OH-4N-acR" kind="embed" id="GMQ-3M-8vm"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OnE-Yt-gVc" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="0v1-Ft-vTe"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="OnE-Yt-gVc" secondAttribute="trailing" id="8Zh-dO-ntF"/>
+                            <constraint firstItem="OnE-Yt-gVc" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Hzc-zz-vhK"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="OnE-Yt-gVc" secondAttribute="bottom" id="jsp-5C-0fK"/>
+                        </constraints>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
@@ -25,6 +39,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1987.6923076923076" y="-2.1327014218009479"/>
+        </scene>
+        <!--PhotoTableViewController-->
+        <scene sceneID="KGP-L2-h8r">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PhotoTable" referencedIdentifier="PhotoTableViewController" id="7OH-4N-acR" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FM4-ub-fcN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2718" y="-71"/>
         </scene>
     </scenes>
     <resources>
