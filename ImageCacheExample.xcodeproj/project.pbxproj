@@ -9,13 +9,20 @@
 /* Begin PBXBuildFile section */
 		DA170D93291681A600BFC7B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA170D92291681A600BFC7B1 /* AppDelegate.swift */; };
 		DA170D95291681A600BFC7B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA170D94291681A600BFC7B1 /* SceneDelegate.swift */; };
-		DA170D97291681A600BFC7B1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA170D96291681A600BFC7B1 /* MainViewController.swift */; };
-		DA170D9A291681A600BFC7B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA170D98291681A600BFC7B1 /* Main.storyboard */; };
 		DA170D9C291681A800BFC7B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA170D9B291681A800BFC7B1 /* Assets.xcassets */; };
 		DA170D9F291681A800BFC7B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA170D9D291681A800BFC7B1 /* LaunchScreen.storyboard */; };
 		DA170DAA291681A800BFC7B1 /* ImageCacheExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA170DA9291681A800BFC7B1 /* ImageCacheExampleTests.swift */; };
 		DA170DB4291681A800BFC7B1 /* ImageCacheExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA170DB3291681A800BFC7B1 /* ImageCacheExampleUITests.swift */; };
 		DA170DB6291681A800BFC7B1 /* ImageCacheExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA170DB5291681A800BFC7B1 /* ImageCacheExampleUITestsLaunchTests.swift */; };
+		DA229B2A2917774900413CBD /* WithSideBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA229B292917774900413CBD /* WithSideBar.storyboard */; };
+		DA229B2C2917775800413CBD /* WithSideBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA229B2B2917775800413CBD /* WithSideBarViewController.swift */; };
+		DA229B2E2917776300413CBD /* WithPullDownMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA229B2D2917776300413CBD /* WithPullDownMenu.storyboard */; };
+		DA229B302917776D00413CBD /* WithPullDownMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA229B2F2917776D00413CBD /* WithPullDownMenuViewController.swift */; };
+		DA229B332917783500413CBD /* PhotoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA229B322917783500413CBD /* PhotoTableViewController.swift */; };
+		DA229B352917786800413CBD /* PhotoTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA229B342917786800413CBD /* PhotoTable.storyboard */; };
+		DA229B38291778F800413CBD /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA229B37291778F800413CBD /* PhotoTableViewCell.swift */; };
+		DA229B3B29177A8E00413CBD /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA229B3A29177A8E00413CBD /* MainTabBarController.swift */; };
+		DA229B3E29177D1100413CBD /* Instantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA229B3D29177D1100413CBD /* Instantiatable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +46,6 @@
 		DA170D8F291681A600BFC7B1 /* ImageCacheExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageCacheExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA170D92291681A600BFC7B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA170D94291681A600BFC7B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DA170D96291681A600BFC7B1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		DA170D99291681A600BFC7B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA170D9B291681A800BFC7B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA170D9E291681A800BFC7B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA170DA0291681A800BFC7B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +54,15 @@
 		DA170DAF291681A800BFC7B1 /* ImageCacheExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageCacheExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA170DB3291681A800BFC7B1 /* ImageCacheExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheExampleUITests.swift; sourceTree = "<group>"; };
 		DA170DB5291681A800BFC7B1 /* ImageCacheExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DA229B292917774900413CBD /* WithSideBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WithSideBar.storyboard; sourceTree = "<group>"; };
+		DA229B2B2917775800413CBD /* WithSideBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithSideBarViewController.swift; sourceTree = "<group>"; };
+		DA229B2D2917776300413CBD /* WithPullDownMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WithPullDownMenu.storyboard; sourceTree = "<group>"; };
+		DA229B2F2917776D00413CBD /* WithPullDownMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithPullDownMenuViewController.swift; sourceTree = "<group>"; };
+		DA229B322917783500413CBD /* PhotoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewController.swift; sourceTree = "<group>"; };
+		DA229B342917786800413CBD /* PhotoTable.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhotoTable.storyboard; sourceTree = "<group>"; };
+		DA229B37291778F800413CBD /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
+		DA229B3A29177A8E00413CBD /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		DA229B3D29177D1100413CBD /* Instantiatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instantiatable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +115,7 @@
 			children = (
 				DA229B222917723500413CBD /* Application */,
 				DA229B242917724100413CBD /* Resources */,
-				DA229B232917723D00413CBD /* Scenes */,
+				DA229B232917723D00413CBD /* Presentation */,
 			);
 			path = ImageCacheExample;
 			sourceTree = "<group>";
@@ -132,13 +146,14 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		DA229B232917723D00413CBD /* Scenes */ = {
+		DA229B232917723D00413CBD /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				DA170D96291681A600BFC7B1 /* MainViewController.swift */,
-				DA170D98291681A600BFC7B1 /* Main.storyboard */,
+				DA229B3929177A7300413CBD /* Common */,
+				DA229B252917755C00413CBD /* MainScene */,
+				DA229B3C29177D0600413CBD /* Utils */,
 			);
-			path = Scenes;
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		DA229B242917724100413CBD /* Resources */ = {
@@ -149,6 +164,76 @@
 				DA170DA0291681A800BFC7B1 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		DA229B252917755C00413CBD /* MainScene */ = {
+			isa = PBXGroup;
+			children = (
+				DA229B262917756E00413CBD /* Common */,
+				DA229B272917758900413CBD /* WithPullDownMenu */,
+				DA229B282917763600413CBD /* WithSideBar */,
+			);
+			path = MainScene;
+			sourceTree = "<group>";
+		};
+		DA229B262917756E00413CBD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DA229B312917779800413CBD /* PhotoTableView */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DA229B272917758900413CBD /* WithPullDownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				DA229B2D2917776300413CBD /* WithPullDownMenu.storyboard */,
+				DA229B2F2917776D00413CBD /* WithPullDownMenuViewController.swift */,
+			);
+			path = WithPullDownMenu;
+			sourceTree = "<group>";
+		};
+		DA229B282917763600413CBD /* WithSideBar */ = {
+			isa = PBXGroup;
+			children = (
+				DA229B292917774900413CBD /* WithSideBar.storyboard */,
+				DA229B2B2917775800413CBD /* WithSideBarViewController.swift */,
+			);
+			path = WithSideBar;
+			sourceTree = "<group>";
+		};
+		DA229B312917779800413CBD /* PhotoTableView */ = {
+			isa = PBXGroup;
+			children = (
+				DA229B342917786800413CBD /* PhotoTable.storyboard */,
+				DA229B322917783500413CBD /* PhotoTableViewController.swift */,
+				DA229B36291778D400413CBD /* Cell */,
+			);
+			path = PhotoTableView;
+			sourceTree = "<group>";
+		};
+		DA229B36291778D400413CBD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DA229B37291778F800413CBD /* PhotoTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		DA229B3929177A7300413CBD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DA229B3A29177A8E00413CBD /* MainTabBarController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DA229B3C29177D0600413CBD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DA229B3D29177D1100413CBD /* Instantiatable.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +342,9 @@
 			files = (
 				DA170D9F291681A800BFC7B1 /* LaunchScreen.storyboard in Resources */,
 				DA170D9C291681A800BFC7B1 /* Assets.xcassets in Resources */,
-				DA170D9A291681A600BFC7B1 /* Main.storyboard in Resources */,
+				DA229B352917786800413CBD /* PhotoTable.storyboard in Resources */,
+				DA229B2E2917776300413CBD /* WithPullDownMenu.storyboard in Resources */,
+				DA229B2A2917774900413CBD /* WithSideBar.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,9 +369,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA170D97291681A600BFC7B1 /* MainViewController.swift in Sources */,
+				DA229B38291778F800413CBD /* PhotoTableViewCell.swift in Sources */,
+				DA229B302917776D00413CBD /* WithPullDownMenuViewController.swift in Sources */,
+				DA229B3E29177D1100413CBD /* Instantiatable.swift in Sources */,
 				DA170D93291681A600BFC7B1 /* AppDelegate.swift in Sources */,
+				DA229B3B29177A8E00413CBD /* MainTabBarController.swift in Sources */,
 				DA170D95291681A600BFC7B1 /* SceneDelegate.swift in Sources */,
+				DA229B332917783500413CBD /* PhotoTableViewController.swift in Sources */,
+				DA229B2C2917775800413CBD /* WithSideBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,14 +413,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DA170D98291681A600BFC7B1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DA170D99291681A600BFC7B1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DA170D9D291681A800BFC7B1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -466,7 +550,7 @@
 				INFOPLIST_FILE = ImageCacheExample/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -496,7 +580,7 @@
 				INFOPLIST_FILE = ImageCacheExample/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
