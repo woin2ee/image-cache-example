@@ -1,0 +1,6 @@
+framework module Pods_ImageCacheExample_ImageCacheExampleUITests {
+  umbrella header "Pods-ImageCacheExample-ImageCacheExampleUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

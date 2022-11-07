@@ -1,0 +1,6 @@
+framework module Pods_ImageCacheExample {
+  umbrella header "Pods-ImageCacheExample-umbrella.h"
+
+  export *
+  module * { export * }
+}
