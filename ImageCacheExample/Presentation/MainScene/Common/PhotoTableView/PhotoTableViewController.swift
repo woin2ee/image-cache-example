@@ -9,15 +9,21 @@ import UIKit
 
 final class PhotoTableViewController: UITableViewController {
     
+    private let photoRepository: PhotoRepository = .init()
+    
     private var photos: [Photo] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        reloadTableView()
     }
     
-    func setPhotos(_ photos: [Photo]) {
-        self.photos = photos
-        self.tableView.reloadData()
+    func reloadTableView() {
+        Task {
+            guard let photos = await photoRepository.getPhotos(byAlbumID: 1) else { return }
+            self.photos = photos
+            self.tableView.reloadData()
+        }
     }
     
     // MARK: - Table view data source
