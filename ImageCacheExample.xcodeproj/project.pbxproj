@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		58E9E867FA993813B4DEC2B8 /* Pods_ImageCacheExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D4B5E61F73989F072CDA9E /* Pods_ImageCacheExample.framework */; };
 		60C00F79394505A0C7FC2950 /* Pods_ImageCacheExample_ImageCacheExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1970689307190F9A605F8DA3 /* Pods_ImageCacheExample_ImageCacheExampleUITests.framework */; };
+		DA0A881A291CA9CD00E9AE43 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0A8819291CA9CD00E9AE43 /* ImageLoader.swift */; };
+		DA0A881D291CAA3000E9AE43 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0A881C291CAA3000E9AE43 /* UIImage+.swift */; };
 		DA170D93291681A600BFC7B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA170D92291681A600BFC7B1 /* AppDelegate.swift */; };
 		DA170D95291681A600BFC7B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA170D94291681A600BFC7B1 /* SceneDelegate.swift */; };
 		DA170D9C291681A800BFC7B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA170D9B291681A800BFC7B1 /* Assets.xcassets */; };
@@ -56,6 +58,8 @@
 		A9D4B5E61F73989F072CDA9E /* Pods_ImageCacheExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageCacheExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA5DDE8C16BC77164289A566 /* Pods-ImageCacheExample-ImageCacheExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageCacheExample-ImageCacheExampleUITests.release.xcconfig"; path = "Target Support Files/Pods-ImageCacheExample-ImageCacheExampleUITests/Pods-ImageCacheExample-ImageCacheExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CE8F008ED00DB78AD99B6D56 /* Pods-ImageCacheExample-ImageCacheExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageCacheExample-ImageCacheExampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-ImageCacheExample-ImageCacheExampleUITests/Pods-ImageCacheExample-ImageCacheExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DA0A8819291CA9CD00E9AE43 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		DA0A881C291CAA3000E9AE43 /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
 		DA170D8F291681A600BFC7B1 /* ImageCacheExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageCacheExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA170D92291681A600BFC7B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA170D94291681A600BFC7B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +136,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		DA0A881B291CAA2400E9AE43 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DA0A881C291CAA3000E9AE43 /* UIImage+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		DA170D86291681A600BFC7B1 = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +171,7 @@
 			children = (
 				DA229B222917723500413CBD /* Application */,
 				DAAFB2422917A1E6007A8DF0 /* Entities */,
+				DA0A881B291CAA2400E9AE43 /* Extensions */,
 				DA229B232917723D00413CBD /* Presentation */,
 				DAAFB2452917ABF5007A8DF0 /* Repositories */,
 				DA229B242917724100413CBD /* Resources */,
@@ -278,6 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				DA229B3D29177D1100413CBD /* Instantiatable.swift */,
+				DA0A8819291CA9CD00E9AE43 /* ImageLoader.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -544,9 +558,11 @@
 				DA229B3E29177D1100413CBD /* Instantiatable.swift in Sources */,
 				DAAFB2472917AC01007A8DF0 /* PhotoRepository.swift in Sources */,
 				DAAFB2442917A1FD007A8DF0 /* Photo.swift in Sources */,
+				DA0A881A291CA9CD00E9AE43 /* ImageLoader.swift in Sources */,
 				DA170D93291681A600BFC7B1 /* AppDelegate.swift in Sources */,
 				DA229B3B29177A8E00413CBD /* MainTabBarController.swift in Sources */,
 				DA170D95291681A600BFC7B1 /* SceneDelegate.swift in Sources */,
+				DA0A881D291CAA3000E9AE43 /* UIImage+.swift in Sources */,
 				DA229B332917783500413CBD /* PhotoTableViewController.swift in Sources */,
 				DA229B2C2917775800413CBD /* WithSideBarViewController.swift in Sources */,
 			);

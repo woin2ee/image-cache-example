@@ -22,15 +22,9 @@ final class PhotoTableViewCell: UITableViewCell {
     }
     
     func bind(photo: Photo) {
-        thumbnailImageView.image = {
-            if let imageURL = URL(string: photo.thumbnailURL),
-               let imageData = try? Data(contentsOf: imageURL),
-               let image = UIImage(data: imageData) {
-                return image
-            } else {
-                return UIImage()
-            }
-        }()
+        Task {
+            thumbnailImageView.image = await ImageLoader.patch(photo.thumbnailURL) ?? .defaultThumbnail
+        }
         idLabel.text = "\(photo.id)"
         titleLabel.text = photo.title
     }
