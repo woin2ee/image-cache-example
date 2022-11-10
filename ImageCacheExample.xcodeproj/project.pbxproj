@@ -175,6 +175,7 @@
 				DA229B232917723D00413CBD /* Presentation */,
 				DAAFB2452917ABF5007A8DF0 /* Repositories */,
 				DA229B242917724100413CBD /* Resources */,
+				DA229B3C29177D0600413CBD /* Utils */,
 			);
 			path = ImageCacheExample;
 			sourceTree = "<group>";
@@ -210,7 +211,6 @@
 			children = (
 				DA229B3929177A7300413CBD /* Common */,
 				DA229B252917755C00413CBD /* MainScene */,
-				DA229B3C29177D0600413CBD /* Utils */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
