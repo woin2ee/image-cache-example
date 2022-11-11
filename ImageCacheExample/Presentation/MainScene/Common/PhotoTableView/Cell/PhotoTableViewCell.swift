@@ -21,11 +21,9 @@ final class PhotoTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    func bind(photo: Photo) {
-        Task {
-            thumbnailImageView.image = await ImageLoader.patch(photo.thumbnailURL) ?? .defaultThumbnail
-        }
-        idLabel.text = "\(photo.id)"
-        titleLabel.text = photo.title
+    func initializeCell() {
+        thumbnailImageView.image = .defaultThumbnail
+        idLabel.text = ""
+        titleLabel.text = ""
     }
 }

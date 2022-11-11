@@ -34,7 +34,19 @@ final class PhotoTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: PhotoTableViewCell.self), for: indexPath) as! PhotoTableViewCell
-        cell.bind(photo: photos[indexPath.row])
+        cell.initializeCell()
+        
+        let photo = photos[indexPath.row]
+        
+        cell.idLabel.text = "\(photo.id)"
+        cell.titleLabel.text = photo.title
+        
+        Task {
+            let thumbnailImage = await ImageLoader.patch(photo.thumbnailURL)
+            let cell = self.tableView.cellForRow(at: indexPath) as? PhotoTableViewCell
+            cell?.thumbnailImageView.image = thumbnailImage
+        }
+        
         return cell
     }
 }
