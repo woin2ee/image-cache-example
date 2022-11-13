@@ -20,7 +20,7 @@ struct ImageLoader {
         case inProgress(DataTask<Data>)
     }
     
-    static private var cacheImages: [URLRequest: LoadStatus] = [:]
+    static private var imageCache: CacheManager<NSURLRequest, StructWrapper<LoadStatus>> = .init()
     
     static func patch(_ urlString: String) async -> UIImage? {
         guard let url = URL.init(string: urlString) else { return nil }
@@ -39,7 +39,7 @@ struct ImageLoader {
         let session: Session = .init(configuration: .ephemeral)
         
         let dataTask = session.request(urlRequest).serializingData()
-        cacheImages[urlRequest] = .inProgress(dataTask)
+        imageCache.put(.init(.inProgress(dataTask)), forKey: urlRequest as NSURLRequest)
         
         guard let imageData = try? await dataTask.value,
               let image = UIImage.init(data: imageData)
@@ -47,13 +47,13 @@ struct ImageLoader {
             return nil
         }
         
-        cacheImages[urlRequest] = .fetched(image)
+        imageCache.put(.init(.fetched(image)), forKey: urlRequest as NSURLRequest)
         
         return image
     }
     
     private static func fetchCacheImageIfRequested(with urlRequest: URLRequest) async -> Result<UIImage?, ImageLoaderError> {
-        guard let status = cacheImages[urlRequest] else {
+        guard let status = imageCache.get(by: urlRequest as NSURLRequest)?.value else {
             return .failure(.nonRequested)
         }
         
