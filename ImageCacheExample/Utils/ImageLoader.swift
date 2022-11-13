@@ -20,7 +20,7 @@ struct ImageLoader {
         case inProgress(DataTask<Data>)
     }
     
-    static private var imageCache: CacheManager<NSURLRequest, StructWrapper<LoadStatus>> = .init()
+    static private var imageCache: CacheManager<NSURLRequest, StructWrapper<LoadStatus>> = .init(name: "ImageCache")
     
     static func patch(_ urlString: String) async -> UIImage? {
         guard let url = URL.init(string: urlString) else { return nil }

@@ -9,7 +9,12 @@ import UIKit
 
 final class CacheManager<KeyType, T> where KeyType : AnyObject, T : AnyObject {
     
-    private let _cache: NSCache<KeyType, T> = .init()
+    private let _cache: NSCache<KeyType, T>
+    
+    init(name: String) {
+        self._cache = .init()
+        self._cache.name = name
+    }
     
     func put(_ newObject: T, forKey key: KeyType) {
         _cache.setObject(newObject, forKey: key)
